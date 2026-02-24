@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Arnovec/test-lib/issues"
   },
-  "homepage": "https://github.com/Arnovec/test-lib#readme"
+  "homepage": "https://github.com/Arnovec/test-lib#readme",
+  "publishConfig": {
+    "@Arnovec:registry": "https://npm.pkg.github.com"
+  }
 }
