@@ -1,5 +1,5 @@
 {
-  "name": "test-lib",
+  "name": "@Arnovec/test-lib",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Arnovec/test-lib#readme",
   "publishConfig": {
-    "@Arnovec:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
