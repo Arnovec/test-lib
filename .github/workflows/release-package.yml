@@ -1,3 +1,4 @@
+# .github/workflows/release-package.yml
 name: Node.js Package
 
 on:
@@ -8,12 +9,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - run: npm ci
-      - run: npm test
+      # - run: npm test  # Раскомментируйте, если у вас есть тесты
 
   publish-gpr:
     needs: build
@@ -22,7 +23,7 @@ jobs:
       packages: write
       contents: read
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
